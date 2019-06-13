@@ -31,6 +31,5 @@ class CashRegister
         self.total.to_i
         raise 'There is no discount to apply.'
       end
-      binding.pry
     end
   end
