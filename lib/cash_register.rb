@@ -28,7 +28,7 @@ class CashRegister
         msg = "After the discount, the total comes to $#{self.total.to_i}."
 
       else
-        raise StringError 'There is no discount to apply.'
+        raise "There is no discount to apply."
       end
     end
   end
