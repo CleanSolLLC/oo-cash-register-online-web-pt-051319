@@ -4,8 +4,8 @@ class CashRegister
 
   attr_accessor :total, :items, :discount, :cash_register_with_discount
 
-  def initialize(total=0, discount = 20)
-    self.total = total #total of cash_register
+  def initialize(total=0, discount = 0)
+    @total = total #total of cash_register
     @item_total = 0 #total of items
     @discount = discount
   end
@@ -15,9 +15,9 @@ class CashRegister
     @price = price
     @quantity = quantity
     if quantity != 0
-      self.total+=(price *quantity)
+      @total += price *quantity
     else
-      self.total+=price
+      @total += price
     end
   end
 
@@ -25,7 +25,7 @@ class CashRegister
       if @discount == 0
         raise "There is no discount to apply."
       end
-        @total.to_i -= @total * @discount / 100
+        @total -= @total * @discount / 100
         msg = "After the discount, the total comes to $#{self.total.to_i}."
 
     end
