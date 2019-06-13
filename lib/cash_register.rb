@@ -5,7 +5,7 @@ class CashRegister
   attr_accessor :total, :items, :discount, :cash_register_with_discount
 
   def initialize(total=0, discount = 20)
-    @self.total = total #total of cash_register
+    self.total = total #total of cash_register
     @item_total = 0 #total of items
     @discount = discount
   end
@@ -15,10 +15,10 @@ class CashRegister
     @price = price
     @quantity = quantity
     if quantity != 0
-      @total+=(price.to_f*quantity)
+      self.total+=(price.to_f*quantity)
       binding.pry
     else
-      @total+=price.to_f
+      self.total+=price.to_f
     end
 binding.pry
   end
