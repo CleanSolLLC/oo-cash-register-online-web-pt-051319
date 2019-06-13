@@ -20,13 +20,12 @@ class CashRegister
     else
       self.total+=price.to_f
     end
-binding.pry
   end
 
     def apply_discount
-      if @discount != 0
-        self.total = @price - (@price*((self.discount)/100.0))
-        self.total.to_i
+      if @discount != 0_price
+        discounted_price = @price - (@price*((self.discount)/100.0))
+        self.total.to_i = discounted
         msg = "After the discount, the total comes to $#{self.total.to_i}."
       elsif @discount == 0
         self.total.to_i
