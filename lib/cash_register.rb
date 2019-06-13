@@ -15,10 +15,10 @@ class CashRegister
     @price = price
     @quantity = quantity
     if quantity != 0
-      @total+=(price*quantity)
+      @total+=(price.to_f*quantity)
       binding.pry
     else
-      @total+=price
+      @total+=price.to_f
     end
 binding.pry
   end
