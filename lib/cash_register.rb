@@ -21,7 +21,7 @@ class CashRegister
       @total+=price
       binding.pry
     end
-
+binding.pry
   end
 
     def apply_discount
