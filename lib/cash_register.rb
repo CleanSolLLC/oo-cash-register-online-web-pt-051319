@@ -14,7 +14,7 @@ class CashRegister
     @item  = item
     @price = price
     @quantity = quantity
-    
+
     if quantity != 0
       @total += price *quantity
     else
