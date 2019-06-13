@@ -4,7 +4,7 @@ class CashRegister
 
   attr_accessor :total, :items, :discount, :cash_register_with_discount
 
-  def initialize(total = 0, discount)
+  def initialize(total=0, discount = nil)
     @total = total #total of cash_register
     @discount = discount
   end
@@ -26,5 +26,6 @@ class CashRegister
       end
         @total -= @total * @discount / 100
         msg = "After the discount, the total comes to $#{self.total.to_i}."
+        binding.pry
     end
   end
