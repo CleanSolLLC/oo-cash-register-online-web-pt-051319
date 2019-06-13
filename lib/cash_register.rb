@@ -27,6 +27,6 @@ class CashRegister
       end
         @total -= @total * @discount / 100
         msg = "After the discount, the total comes to $#{self.total.to_i}."
-  
+
     end
   end
