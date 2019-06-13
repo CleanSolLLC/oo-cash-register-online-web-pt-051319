@@ -14,13 +14,13 @@ class CashRegister
     @item  = item
     @price = price
     @quantity = quantity
-    @item_array << item
-    binding.pry
+    
     if quantity != 0
       @total += price *quantity
     else
       @total += price
     end
+    @item_array << item
   end
 
     def apply_discount
