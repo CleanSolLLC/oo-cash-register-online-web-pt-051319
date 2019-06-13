@@ -4,7 +4,7 @@ class CashRegister
 
   attr_accessor :total, :items, :discount, :cash_register_with_discount
   item_array = []
-  
+
   def initialize(discount=nil)
     @total = 0
     @discount = discount
