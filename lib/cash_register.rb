@@ -12,6 +12,7 @@ class CashRegister
 
   def add_item(item,price,quantity=0)
     @item << item
+    binding.pry
     @price = price
     @quantity = quantity
     if quantity != 0
