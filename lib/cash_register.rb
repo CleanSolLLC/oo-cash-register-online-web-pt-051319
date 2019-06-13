@@ -27,6 +27,7 @@ class CashRegister
         self.total = @price - (@price*((@discount)/100.0))
         self.total.to_i
         msg = "After the discount, the total comes to $#{@total.to_i}."
+        binding.pry
       elsif @discount == 0
         self.total.to_i
         msg = "There is no discount to apply."
