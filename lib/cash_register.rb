@@ -34,7 +34,7 @@ class CashRegister
 
     def items
       @items_array.each do |store_item|
-        
+
     end
 
   end
