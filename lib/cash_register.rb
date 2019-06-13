@@ -19,7 +19,6 @@ class CashRegister
       binding.pry
     else
       @total+=price
-      binding.pry
     end
 binding.pry
   end
