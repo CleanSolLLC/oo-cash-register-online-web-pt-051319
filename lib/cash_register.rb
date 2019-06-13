@@ -2,8 +2,8 @@ require 'pry'
 
 class CashRegister
 
-  attr_accessor :total, :items, :discount, :cash_register_with_discoun
-  @items = []
+  attr_accessor :total, :items, :discount, :cash_register_with_discount
+  item_array = []
 
   def initialize(discount=nil)
     @total = 0
@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def add_item(item,price,quantity=0)
-    binding.pry
+    @item  = item
     @price = price
     @quantity = quantity
     if quantity != 0
@@ -19,7 +19,6 @@ class CashRegister
     else
       @total += price
     end
-    binding.pry
   end
 
     def apply_discount
@@ -29,10 +28,4 @@ class CashRegister
         @total -= @total * @discount / 100
         msg = "After the discount, the total comes to $#{self.total.to_i}."
     end
-
-    #def items
-    #@  @items_array.each do |store_item|
-
-    #end
-
   end
