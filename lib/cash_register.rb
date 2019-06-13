@@ -27,8 +27,7 @@ class CashRegister
         self.total.to_i
         msg = "After the discount, the total comes to $#{self.total.to_i}."
 
-      elsif @discount == 0
-        self.total.to_i
+      else 
         raise 'There is no discount to apply.'
       end
     end
