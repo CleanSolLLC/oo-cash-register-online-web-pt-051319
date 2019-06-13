@@ -32,9 +32,9 @@ class CashRegister
         msg = "After the discount, the total comes to $#{self.total.to_i}."
     end
 
-    def items
-      @items_array.each do |store_item|
+    #def items
+    #@  @items_array.each do |store_item|
 
-    end
+    #end
 
   end
