@@ -16,7 +16,6 @@ class CashRegister
     @quantity = quantity
     if quantity != 0
       self.total+=(price.to_f*quantity)
-      binding.pry
     else
       self.total+=price.to_f
     end
