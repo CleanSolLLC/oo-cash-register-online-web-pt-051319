@@ -11,7 +11,6 @@ class CashRegister
   end
 
   def add_item(item,price,quantity=0)
-    @items << item
     binding.pry
     @price = price
     @quantity = quantity
