@@ -31,7 +31,5 @@ class CashRegister
         self.total.to_i
         msg = "There is no discount to apply."
       end
-      msg
     end
-
   end
