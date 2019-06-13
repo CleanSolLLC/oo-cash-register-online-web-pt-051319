@@ -10,11 +10,11 @@ class CashRegister
   end
 
   def add_item(item,price,quantity=0)
-    item_array = []
+    @item_array = []
     @item  = item
     @price = price
     @quantity = quantity
-    item_array << item
+    @item_array << item
     binding.pry
     if quantity != 0
       @total += price *quantity
