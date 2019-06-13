@@ -20,7 +20,6 @@ class CashRegister
     else
       self.total+=price.to_f
     end
-binding.pry
   end
 
     def apply_discount
