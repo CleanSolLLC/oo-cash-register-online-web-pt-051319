@@ -15,9 +15,9 @@ class CashRegister
     @price = price
     @quantity = quantity
     if quantity != 0
-      self.total+=(price.to_f*quantity)
+      self.total+=(price *quantity)
     else
-      self.total+=price.to_f
+      self.total+=price
     end
   end
 
