@@ -16,6 +16,7 @@ class CashRegister
     @quantity = quantity
     if quantity != 0
       @total+=(price*quantity)
+      binding.pry
     else
       @total+=price
       binding.pry
